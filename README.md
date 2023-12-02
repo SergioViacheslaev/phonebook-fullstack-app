@@ -1,2 +1,4 @@
 # phonebook-fullstack-app
-React frontend, Spring Boot Kotlin backend
+
+- react-frontend (React, TypeScript)
+- springboot-backend (Kotlin)
