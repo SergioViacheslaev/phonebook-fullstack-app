@@ -1,11 +1,11 @@
 plugins {
-    id("org.springframework.boot") version "3.2.0"
-    kotlin("plugin.spring") version "1.9.20"
+    id("org.springframework.boot")
+    kotlin("plugin.spring")
 }
 
 dependencies {
     implementation(project(":model"))
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

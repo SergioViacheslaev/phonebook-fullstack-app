@@ -1,22 +1,16 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-plugins {
-    kotlin("jvm") version "1.9.20"
-    id("io.spring.dependency-management") version "1.1.4"
-}
+val springBootVersion: String by project
 
 group = "com.study.phonebook"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0-RELEASE"
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
+plugins {
+    kotlin("jvm")
+    id("io.spring.dependency-management")
 }
 
 subprojects {
-    val springBootVersion: String by project
-
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "io.spring.dependency-management")
 
