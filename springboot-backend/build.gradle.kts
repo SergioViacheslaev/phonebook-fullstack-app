@@ -18,6 +18,11 @@ subprojects {
         imports {
             mavenBom("org.springframework.boot:spring-boot-dependencies:$springBootVersion")
         }
+
+        //example of overriding dependency version from mavenBom
+        dependencies {
+            dependency("org.mockito:mockito-core:5.8.0")
+        }
     }
 
     dependencies {
